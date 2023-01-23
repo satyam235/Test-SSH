@@ -16,6 +16,7 @@ env:
 jobs:
   # This job will build the project
   build:
+    permissions: write-all
     # The type of runner that the job will run on
     strategy:
         matrix:
