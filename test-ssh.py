@@ -19,8 +19,7 @@ def ssh_connect_private_key(ip_address, username, ssh_key, ssh_port,passphrase=N
             passphrase=passphrase,
             look_for_keys=False,
             timeout=timeout,
-            port=ssh_port,
-            disabled_algorithms={'pubkeys': ['rsa-sha2-256', 'rsa-sha2-512']}
+            port=ssh_port
             )
             
         print("Connected to ssh client using key")
